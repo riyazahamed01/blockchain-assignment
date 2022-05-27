@@ -14,6 +14,8 @@ curl -sSL  [https://bit.ly/2ysbOFE](https://bit.ly/2ysbOFE)  | bash -s -- 2.2.5 
 
 ## Start using the Fabric test network
 
+Use fabric-samples test-network fro chaincode deployment
+
 https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html
 
 After setup the network clone the chaincode repo and follow the deploying a smart contract to a channel 
