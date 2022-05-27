@@ -21,4 +21,3 @@ After setup the network clone the chaincode repo and follow the deploying a smar
 ## Deploying a smart contract to a channel
 https://hyperledger-fabric.readthedocs.io/en/latest/deploy_chaincode.html
 
-# blockchain-assignment
