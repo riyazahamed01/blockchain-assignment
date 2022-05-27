@@ -14,7 +14,7 @@ curl -sSL  [https://bit.ly/2ysbOFE](https://bit.ly/2ysbOFE)  | bash -s -- 2.2.5 
 
 ## Start using the Fabric test network
 
-Use fabric-samples test-network fro chaincode deployment
+Use fabric-samples test-network for chaincode deployment
 
 https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html
 
