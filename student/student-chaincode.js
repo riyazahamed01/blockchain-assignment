@@ -13,7 +13,8 @@ class StudentContract extends Contract {
     // AddNewStudent add a new student.
     async AddNewStudent(ctx, id, firstName, lastName, email, gender, mobile_no, address, city) {
         const studentExist = await ctx.stub.getState(id);
-        if (studentExist) {
+        const exists = studentExist && studentExist.length > 0;
+        if (exists) {
             throw new Error(`The student ${id} already exists`);
         }
 
@@ -35,7 +36,8 @@ class StudentContract extends Contract {
     // UpdateStudent updates an existing student with provided parameters. 
     async UpdateStudentInfo(ctx, id, firstName, lastName, email, gender, mobile_no, address, city) {
         const studentExist = await ctx.stub.getState(id);
-        if (!studentExist) {
+        const exists = studentExist && studentExist.length > 0;
+        if (!exists) {
             throw new Error(`The student ${id} does not exist`);
         }
 
